@@ -1,0 +1,10 @@
+<mat-card *ngIf="item != null">
+    <mat-card-title>{{item.name}}</mat-card-title>
+    <mat-card-content>
+        <mat-list>
+            <mat-list-item *ngFor="let action of item.actionPoints">
+                <mat-slide-toggle [(ngModel)]="action.done">{{action.name}}</mat-slide-toggle>
+            </mat-list-item>
+        </mat-list>
+    </mat-card-content>
+</mat-card>

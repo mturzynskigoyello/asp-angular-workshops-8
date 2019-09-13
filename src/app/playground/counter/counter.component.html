@@ -1,0 +1,11 @@
+<div>
+    <p>counter works!</p>
+    <p>counter value: {{counter}}</p>
+    <p>
+      <button mat-button (click)="increaseCounter()">Increase</button>
+      <button mat-button (click)="decreaseCounter()">Decrease</button>
+    </p>
+    <p *ngIf="counter > 10">
+      OMG
+    </p>
+  </div>
